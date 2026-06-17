@@ -93,14 +93,14 @@ export function FooterSection() {
 
         <div className="border-t border-border/50 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-             <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-muted-foreground">
               © 2024 TradeLMT. All rights reserved. | Professional trading platform for futures traders.
             </p>
             <div className="flex gap-6">
-              <a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">
+              <a href="/privacy" className="text-sm text-muted-foreground hover:text-accent transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">
+              <a href="/terms" className="text-sm text-muted-foreground hover:text-accent transition-colors">
                 Terms of Service
               </a>
               <a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">
@@ -115,13 +115,15 @@ export function FooterSection() {
             <div>
               <p className="text-xs text-muted-foreground mb-3">Download for Desktop</p>
               <div className="flex gap-3">
-                <button className="px-4 py-2 bg-card border border-border/50 rounded hover:border-accent/50 hover:bg-card/80 transition-colors text-sm font-medium">
+                <button className="px-5 py-2 rounded-md border border-white/10 text-white/80 hover:text-white hover:border-white/30 transition">
                   Windows
                 </button>
-                <button className="px-4 py-2 bg-card border border-border/50 rounded hover:border-accent/50 hover:bg-card/80 transition-colors text-sm font-medium">
+
+                <button className="px-5 py-2 rounded-md border border-white/10 text-white/80 hover:text-white hover:border-white/30 transition">
                   macOS
                 </button>
-                <button className="px-4 py-2 bg-card border border-border/50 rounded hover:border-accent/50 hover:bg-card/80 transition-colors text-sm font-medium">
+
+                <button className="px-5 py-2 rounded-md border border-white/10 text-white/80 hover:text-white hover:border-white/30 transition">
                   Linux
                 </button>
               </div>
