@@ -1,70 +1,110 @@
 'use client'
 
-export function HowItWorksSection() {
-  const steps = [
-    {
-      number: '01',
-      title: 'Download the App',
-      description: 'Get our desktop application. It&apos;s free and works on Windows, Mac, and Linux.',
-    },
-    {
-      number: '02',
-      title: 'Connect Your Broker',
-      description: 'Link your trading account from any supported broker in seconds. Your data stays secure.',
-    },
-    {
-      number: '03',
-      title: 'Configure Settings',
-      description: 'Set your trading preferences, risk parameters, and notifications. Everything is customizable.',
-    },
-    {
-      number: '04',
-      title: 'Start Trading',
-      description: 'Execute trades with confidence using our powerful yet intuitive trading interface.',
-    },
-  ]
+import { Shield, Clock, Ban, CalendarX } from 'lucide-react'
 
+const steps = [
+  {
+    icon: Shield,
+    number: '01',
+    title: 'Set Your Daily Trade Limit',
+    description:
+      'Define how many trades you can execute per day. Once reached, platform automatically locks trading.',
+    example: 'Example: 5 trades → platform lock',
+  },
+  {
+    icon: Clock,
+    number: '02',
+    title: 'Choose Block Duration',
+    description:
+      'Select how long trading stays blocked after limit is reached.',
+    example: '2h · 4h · 8h · 12h · 24h',
+  },
+  {
+    icon: Ban,
+    number: '03',
+    title: 'Platform Gets Locked',
+    description:
+      'Once limit is hit, trading access is blocked automatically with no override.',
+    example: 'Zerodha / Upstox / Angel One → blocked',
+  },
+  {
+    icon: CalendarX,
+    number: '04',
+    title: 'Schedule Block Days',
+    description:
+      'Pre-set no-trade days like expiry days or personal rules.',
+    example: 'Every Thursday / Custom dates',
+  },
+]
+
+export function HowItWorksSection() {
   return (
-    <section className="py-20 px-4 bg-card/50">
+    <section id="how-it-works" className="py-24 px-4 bg-black">
       <div className="max-w-5xl mx-auto">
+
+        {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Get Started in{' '}
-            <span className="text-accent">Just 4 Steps</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+           Your Trading Rules. Enforced Automatically.
           </h2>
-          <p className="text-lg text-muted-foreground">
-            From download to first trade in minutes. It&apos;s that simple.
+
+          <p className="text-lg text-white/60 max-w-2xl mx-auto">
+            Set your trading rules once. The system handles discipline for you.
           </p>
         </div>
 
-        <div className="space-y-8">
-          {steps.map((step, index) => (
-            <div key={index} className="flex gap-8 items-start">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary text-primary-foreground font-bold text-xl">
-                  {step.number}
+        {/* Steps */}
+        <div className="space-y-6">
+          {steps.map((step) => {
+            const Icon = step.icon
+            return (
+              <div
+                key={step.number}
+                className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 md:p-8 flex gap-6"
+              >
+                {/* Icon */}
+                <div className="w-12 h-12 rounded-full bg-white/5 text-green-400 flex items-center justify-center flex-shrink-0">
+                  <Icon size={22} />
+                </div>
+
+                {/* Content */}
+                <div>
+                  <span className="text-xs text-green-400 font-semibold">
+                    STEP {step.number}
+                  </span>
+
+                  <h3 className="text-xl font-bold text-white mt-1 mb-2">
+                    {step.title}
+                  </h3>
+
+                  <p className="text-white/60 mb-3">
+                    {step.description}
+                  </p>
+
+                  <div className="text-sm text-white/50">
+                    {step.example}
+                  </div>
                 </div>
               </div>
-              <div className="flex-1 pt-2">
-                <h3 className="text-2xl font-bold mb-2">{step.title}</h3>
-                <p className="text-muted-foreground text-lg">{step.description}</p>
-              </div>
-              {index < steps.length - 1 && (
-                <div className="absolute left-8 top-24 w-1 h-20 bg-gradient-to-b from-accent to-transparent" />
-              )}
-            </div>
-          ))}
+            )
+          })}
         </div>
 
-        <div className="mt-16 p-8 rounded-lg bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10 border border-border/50 text-center">
-          <h3 className="text-2xl font-bold mb-3">Ready to trade?</h3>
-          <p className="text-muted-foreground mb-6">
-            Join thousands of traders who trust Intuitive Flow to execute their strategies.
+        {/* CTA */}
+        <div className="mt-12 p-8 rounded-2xl border border-white/10 bg-white/[0.03] text-center">
+          <h3 className="text-2xl font-bold text-white mb-2">
+            Ready to stop overtrading?
+          </h3>
+
+          <p className="text-white/60 mb-6">
+            Download TradeLMT and start trading with discipline.
           </p>
-          <button className="px-8 py-3 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-colors">
-            Download Now
+
+          <button className="px-8 py-3 bg-green-500 hover:bg-green-600 text-black font-semibold rounded-xl transition-colors">
+            Download Now — Free
           </button>
         </div>
+
       </div>
     </section>
   )

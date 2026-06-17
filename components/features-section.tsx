@@ -1,61 +1,84 @@
 'use client'
 
-export function FeaturesSection() {
-  const features = [
-    {
-      icon: '⚡',
-      title: 'Ultra-Low Latency',
-      description: 'Sub-millisecond order execution. Get your trades in first with our optimized infrastructure.',
-    },
-    {
-      icon: '🎯',
-      title: 'Risk Management',
-      description: 'Advanced position sizing and stop-loss tools to protect your capital and maximize gains.',
-    },
-    {
-      icon: '📊',
-      description: 'Real-time analytics and detailed trade journals to track performance and improve strategy.',
-      title: 'Advanced Analytics',
-    },
-    {
-      icon: '🔐',
-      title: 'Bank-Level Security',
-      description: 'Your accounts and funds are protected with enterprise-grade security and encryption.',
-    },
-    {
-      icon: '📱',
-      title: 'Multi-Device Sync',
-      description: 'Trade seamlessly across desktop, tablet, and mobile. Your settings sync instantly.',
-    },
-    {
-      icon: '🚀',
-      title: 'Lightning-Fast Platform',
-      description: 'Built for speed. Optimized performance means more time trading and less time waiting.',
-    },
-  ]
+import { Shield, Clock, CalendarX, Ban, Bell, BarChart2 } from 'lucide-react'
 
+const features = [
+  {
+    icon: Shield,
+    title: 'Daily Trade Limit',
+    description:
+      'Set a max number of trades per day. Once reached, your broker platform is automatically locked.',
+  },
+  {
+    icon: Clock,
+    title: 'Timed Block',
+    description:
+      'Choose your lockout duration — 2, 4, 8, 12, or 24 hours. No way to bypass it during the block.',
+  },
+  {
+    icon: Ban,
+    title: 'Loss Limit Lock',
+    description:
+      'Define a max daily loss. Hit the limit and trading is halted for the rest of the day.',
+  },
+  {
+    icon: CalendarX,
+    title: 'Block Specific Dates',
+    description:
+      'Schedule no-trade days in advance for discipline and risk control.',
+  },
+  {
+    icon: Bell,
+    title: 'Smart Alerts',
+    description:
+      'Get notified before you approach your limit so you can manage risk early.',
+  },
+  {
+    icon: BarChart2,
+    title: 'Trade Journal',
+    description:
+      'Auto-log every trade with timestamp and P&L to track discipline over time.',
+  },
+]
+
+export function FeaturesSection() {
   return (
-    <section className="py-20 px-4">
+    <section id="features" className="py-24 px-4 bg-black">
       <div className="max-w-6xl mx-auto">
+
+        {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Everything You Need to{' '}
-            <span className="text-accent">Trade Like a Pro</span>
+
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            Trading Rules That Protect Your Capital
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Packed with powerful features designed for serious traders. From risk management to advanced analytics.
+
+          <p className="text-lg text-white/60 max-w-xl mx-auto">
+            Set limits, control risk, and enforce discipline across your trading account.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
+        {/* Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {features.map(({ icon: Icon, title, description }) => (
             <div
-              key={index}
-              className="p-6 rounded-lg border border-border/50 bg-card/50 hover:bg-card hover:border-accent/50 transition-all duration-300"
+              key={title}
+              className="p-6 rounded-2xl border border-white/10 bg-white/[0.03] hover:border-green-500/30 transition-all duration-200"
             >
-              <div className="text-4xl mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
-              <p className="text-muted-foreground">{feature.description}</p>
+              {/* Icon */}
+              <div className="w-10 h-10 rounded-full bg-green-500/10 text-green-400 flex items-center justify-center mb-4">
+                <Icon size={20} />
+              </div>
+
+              {/* Title */}
+              <h3 className="text-lg font-semibold text-white mb-2">
+                {title}
+              </h3>
+
+              {/* Description */}
+              <p className="text-white/60 text-sm leading-relaxed">
+                {description}
+              </p>
             </div>
           ))}
         </div>

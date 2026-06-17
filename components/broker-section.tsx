@@ -1,51 +1,73 @@
 'use client'
 
+import Image from 'next/image'
+
+const brokers = [
+  {
+    name: 'ThinkOrSwim / Schwab',
+    logo: 'https://play-lh.googleusercontent.com/GuDYnpP_SjyHhqSSh4pqtcCltMu-hHZdjnS1ZegBzp2EqCb9KMKFvbpn-K41CaSO9voFs1goDn10Zju4_IDgV9U',
+  },
+  {
+    name: 'Interactive Brokers (IBKR)',
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpG_NVDaBiUTcyquqDTVbaJRTmSa5ncFL3sw&s',
+  },
+  {
+    name: 'Binance',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/5/57/Binance_Logo.png',
+  },
+  {
+    name :"Tradovate",
+    logo:"https://play-lh.googleusercontent.com/JXKzB18F4sn2juqCJJTGZ-RrRxRe0iV-L3bUX8BmP5ZeDFUybMS5pvt35a7Fo0n_oeXD  "
+  },
+  {
+   name : "TastyTrade",
+   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJBnk-1o37EfPtKlkjO5P7y4rMUwUzdwssmw&s"
+  },
+  {
+    name :"Liquid/Quoine",
+    logo: "https://iq.wiki/cdn-cgi/image/width=1920,quality=70/https://ipfs.everipedia.org/ipfs/QmSuaMXbUmc6JeaTHHHTEsswSPDyJEGT8MXVQDHEdfwPZK"
+  }
+ ]
+
 export function BrokerSection() {
-  const brokers = [
-    { name: 'TD Ameritrade', icon: '🏦' },
-    { name: 'Interactive Brokers', icon: '📊' },
-    { name: 'ThinkorSwim', icon: '💹' },
-    { name: 'TradeStation', icon: '⚡' },
-    { name: 'Tradeovate', icon: '🎯' },
-    { name: 'Tastyworks', icon: '🍴' },
-    { name: 'Lightspeed', icon: '⚙️' },
-    { name: 'Centerpoint', icon: '🔄' },
-  ]
-
   return (
-    <section className="py-20 px-4 bg-card/50">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Integrated with{' '}
-            <span className="text-accent">Leading Brokers</span>
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Trade across your favorite platforms seamlessly. We support all major brokers with zero configuration required.
-          </p>
-        </div>
+    <section className="py-24 px-4 bg-black">
+      <div className="max-w-5xl mx-auto text-center">
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        {/* Heading */}
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          Your Broker. <span className="text-green-400">Your Choice.</span>
+        </h2>
+
+        <p className="text-lg text-white/60 max-w-xl mx-auto mb-14">
+          Connect your broker once. Trade limits and risk rules are enforced automatically.
+        </p>
+
+        {/* Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 mb-12">
           {brokers.map((broker) => (
             <div
               key={broker.name}
-              className="flex flex-col items-center justify-center p-6 rounded-lg border border-border/50 hover:border-accent/50 hover:bg-accent/5 transition-all duration-300 cursor-pointer"
+              className="flex flex-col items-center gap-3 p-5 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-green-500/30 transition-all"
             >
-              <div className="text-4xl mb-3">{broker.icon}</div>
-              <p className="font-semibold text-center text-sm">{broker.name}</p>
+              <div className="w-12 h-12 relative">
+                <Image
+                  src={broker.logo}
+                  alt={broker.name}
+                  fill
+                  className="object-contain"
+                />
+              </div>
+
+              <span className="text-sm font-medium text-white/80 text-center">
+                {broker.name}
+              </span>
             </div>
           ))}
         </div>
 
-        <div className="mt-16 p-8 rounded-lg bg-gradient-to-r from-primary/10 to-secondary/10 border border-border/50">
-          <h3 className="text-2xl font-bold mb-3">Your Broker Isn&apos;t Listed?</h3>
-          <p className="text-muted-foreground mb-4">
-            We&apos;re constantly adding new broker integrations. Check back soon or contact us to request your broker.
-          </p>
-          <a href="#" className="text-accent hover:text-accent/80 font-semibold">
-            Request Integration →
-          </a>
-        </div>
+        {/* Footer note */}
+       
       </div>
     </section>
   )

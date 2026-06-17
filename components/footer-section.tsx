@@ -6,7 +6,7 @@ export function FooterSection() {
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div>
-            <h3 className="text-xl font-bold mb-4 text-accent">Intuitive Flow</h3>
+            <h3 className="text-xl font-bold mb-4 text-accent">TradLMT</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Professional trading platform for futures traders. Low latency, multi-broker support, and advanced analytics.
             </p>
