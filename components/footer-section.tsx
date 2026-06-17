@@ -3,7 +3,7 @@
 export function FooterSection() {
   return (
     <footer className="bg-card/50 border-t border-border/50 py-20 px-4">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-screen-xl mx-auto">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div>
             <h3 className="text-xl font-bold mb-4 text-accent">TradLMT</h3>

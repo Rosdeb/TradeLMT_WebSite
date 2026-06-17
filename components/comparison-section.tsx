@@ -14,8 +14,8 @@ const rows = [
 
 export function ComparisonSection() {
   return (
-    <section className="py-24 px-4">
-      <div className="max-w-4xl mx-auto">
+    <section className="py-14 px-4">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             TradeLMT vs Manual Discipline

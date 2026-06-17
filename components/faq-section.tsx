@@ -40,8 +40,8 @@ export function FAQSection() {
   const [open, setOpen] = useState<number | null>(0)
 
   return (
-    <section id="faq" className="py-24 px-4 bg-black">
-      <div className="max-w-3xl mx-auto">
+    <section id="faq" className="py-14 px-4 bg-black">
+      <div className="max-w-6xl mx-auto">
 
         {/* Header */}
         <div className="text-center mb-14">

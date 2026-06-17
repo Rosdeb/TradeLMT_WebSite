@@ -26,8 +26,8 @@ const testimonials = [
 
 export function TestimonialsSection() {
   return (
-    <section className="py-24 px-4 bg-black/40">
-      <div className="max-w-5xl mx-auto">
+    <section className="py-14 px-4 bg-black/40">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-500/10 border border-green-500/20 mb-4">
             <span className="text-sm font-medium text-green-400">Trader Stories</span>

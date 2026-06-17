@@ -31,8 +31,8 @@ const brokers = [
 
 export function BrokerSection() {
   return (
-    <section className="py-24 px-4 bg-black">
-      <div className="max-w-5xl mx-auto text-center">
+    <section className="py-14 px-4 bg-black">
+      <div className="max-w-7xl mx-auto text-center">
 
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
