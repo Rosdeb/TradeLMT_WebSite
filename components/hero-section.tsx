@@ -27,6 +27,7 @@ export function HeroSection() {
           <span className="text-green-400">Trade With Discipline.</span>
         </h1>
 
+
         <p className="text-lg md:text-xl text-white/65 mb-4 max-w-2xl mx-auto leading-relaxed">
           Set daily trade limits & loss limits. When you hit your limit, TradeLMT automatically
           locks your broker platform — no overrides, no revenge trading.
