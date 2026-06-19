@@ -29,8 +29,8 @@ export function HeroSection() {
 
 
         <p className="text-lg md:text-xl text-white/65 mb-4 max-w-2xl mx-auto leading-relaxed">
-          Set daily trade limits & loss limits. When you hit your limit, TradeLMT automatically
-          locks your broker platform — no overrides, no revenge trading.
+          Stop wasting money on scattered tools. Focus on quality trades with one API.
+          TradeLMT automatically locks your broker platform when you hit your limits.
         </p>
 
         <p className="text-base text-green-400/80 font-medium mb-10">
