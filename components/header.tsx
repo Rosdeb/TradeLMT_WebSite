@@ -21,14 +21,23 @@ export function Header() {
       <div className="max-w-screen-xl mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-          <Image src="/image.png" alt="TradeLMT" width={36} height={36} className="rounded-full" />
-          <span className="text-xl font-bold text-white">TradeLMT</span>
+          <Image src="/tradelmt-logo.png" alt="TradeLMT" width={50} height={50} className="rounded-full" />
+
+          <Image
+            src="/Screenshot_2026-06-19_145555-removebg-preview.png"
+            alt="TradeLMT"
+            width={176}
+            height={80}
+            priority
+            className="h-10 w-auto"
+          />
         </a>
 
         {/* Nav */}
         <nav className="hidden md:flex items-center gap-8">
           <a href="#features" className="text-sm text-white/60 hover:text-white transition-colors">Features</a>
           <a href="#how-it-works" className="text-sm text-white/60 hover:text-white transition-colors">How It Works</a>
+          <a href="#pricing" className="text-sm text-white/60 hover:text-white transition-colors">Pricing</a>
           <a href="#faq" className="text-sm text-white/60 hover:text-white transition-colors">FAQ</a>
         </nav>
 

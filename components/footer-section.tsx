@@ -21,7 +21,7 @@ export function FooterSection() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-accent transition-colors">
+                <a href="#pricing" className="hover:text-accent transition-colors">
                   Pricing
                 </a>
               </li>
@@ -94,7 +94,7 @@ export function FooterSection() {
         <div className="border-t border-border/50 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              © 2024 TradeLMT. All rights reserved. | Professional trading platform for futures traders.
+              © 2026 TradeLMT. All rights reserved. | Professional trading platform for futures traders.
             </p>
             <div className="flex gap-6">
               <a href="/privacy" className="text-sm text-muted-foreground hover:text-accent transition-colors">

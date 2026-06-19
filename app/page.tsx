@@ -4,6 +4,7 @@ import { FeaturesSection } from '@/components/features-section'
 import { HowItWorksSection } from '@/components/how-it-works-section'
 import { BrokerSection } from '@/components/broker-section'
 import { ComparisonSection } from '@/components/comparison-section'
+import { PricingSection } from '@/components/pricing-section'
 import { FAQSection } from '@/components/faq-section'
 import { FooterSection } from '@/components/footer-section'
 
@@ -17,7 +18,7 @@ export default function Home() {
         <HowItWorksSection />
         <BrokerSection />
         <ComparisonSection />
-    
+        <PricingSection />
         <FAQSection />
         <FooterSection />
       </main>

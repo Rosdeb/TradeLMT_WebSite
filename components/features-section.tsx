@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { Shield, Clock, CalendarX, Ban, Bell, BarChart2 } from 'lucide-react'
 
 const features = [
@@ -43,20 +44,27 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <section id="features" className="py-14 px-4 bg-black">
+    <section id="features" className="py-14 px-4 bg-black overflow-hidden">
       <div className="max-w-screen-xl mx-auto">
 
         {/* Header */}
-        <div className="text-center mb-16">
+    <div
+  className="relative grid lg:grid-cols-[0.75fr_1.25fr] gap-10 lg:gap-16 items-center mb-16
+             bg-[url('/devices_846x665.webp')] bg-no-repeat bg-right bg-contain"
+>
+  <div className="text-center lg:text-left z-10">
+    <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+      Trading Rules That Protect Your Capital
+    </h2>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Trading Rules That Protect Your Capital
-          </h2>
+    <p className="text-lg text-white/60 max-w-xl mx-auto lg:mx-0">
+      Set limits, control risk, and enforce discipline across your trading account.
+    </p>
+  </div>
 
-          <p className="text-lg text-white/60 max-w-xl mx-auto">
-            Set limits, control risk, and enforce discipline across your trading account.
-          </p>
-        </div>
+  {/* Empty column to preserve layout */}
+  <div className="min-h-[340px] md:min-h-[500px]" />
+</div>
 
         {/* Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -91,19 +91,7 @@ export function HowItWorksSection() {
         </div>
 
         {/* CTA */}
-        <div className="mt-12 p-8 rounded-2xl border border-white/10 bg-white/[0.03] text-center">
-          <h3 className="text-2xl font-bold text-white mb-2">
-            Ready to stop overtrading?
-          </h3>
-
-          <p className="text-white/60 mb-6">
-            Download TradeLMT and start trading with discipline.
-          </p>
-
-          <button className="px-8 py-3 bg-green-500 hover:bg-green-600 text-black font-semibold rounded-xl transition-colors">
-            Download Now — Free
-          </button>
-        </div>
+      
 
       </div>
     </section>
