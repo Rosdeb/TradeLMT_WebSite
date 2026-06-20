@@ -24,10 +24,10 @@ export function Header() {
           <Image src="/tradelmt-logo.png" alt="TradeLMT" width={50} height={50} className="rounded-full" />
 
           <Image
-            src="/Screenshot_2026-06-19_145555-removebg-preview.png"
+            src="/image_1.png"
             alt="TradeLMT"
-            width={176}
-            height={80}
+            width={200}
+            height={100}
             priority
             className="h-10 w-auto"
           />

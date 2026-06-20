@@ -6,7 +6,7 @@ const rows = [
   { feature: 'Hard trade limit (no override)', us: true, them: false },
   { feature: 'Timed broker lock (2–24 hrs)', us: true, them: false },
   { feature: 'Block specific dates / expiry days', us: true, them: false },
-  { feature: 'Daily loss limit enforcement', us: true, them: false },
+ // { feature: 'Daily loss limit enforcement', us: true, them: false },
   { feature: 'Free to get started', us: false, them: false },
   { feature: 'No account minimum required', us: true, them: true },
   { feature: 'Desktop + browser blocking', us: true, them: false },

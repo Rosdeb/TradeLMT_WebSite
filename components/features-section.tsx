@@ -8,19 +8,13 @@ const features = [
     icon: Shield,
     title: 'Daily Trade Limit',
     description:
-      'Set a max number of trades per day. Once reached, your broker platform is automatically locked.',
+      'Set a max number of trades per day. Once reached, Choose your lockout duration',
   },
   {
     icon: Clock,
     title: 'Timed Block',
     description:
       'Choose your lockout duration — 2, 4, 8, 12, or 24 hours. No way to bypass it during the block.',
-  },
-  {
-    icon: Ban,
-    title: 'Loss Limit Lock',
-    description:
-      'Define a max daily loss. Hit the limit and trading is halted for the rest of the day.',
   },
   {
     icon: CalendarX,
