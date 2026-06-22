@@ -13,7 +13,7 @@ const plans = [
       '1 broker/API connection',
       'Daily trade limit enforcement',
       'Daily loss limit lock',
-      'Timed blocks from 2 to 24 hours',
+      'Block for 4, 8, 12, or 24 hours',
       'Block specific trading dates',
       'Desktop app access',
     ],

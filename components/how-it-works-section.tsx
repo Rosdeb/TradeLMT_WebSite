@@ -17,7 +17,7 @@ const steps = [
     title: 'Choose Block Duration',
     description:
       'Select how long trading stays blocked after limit is reached.',
-    example: '2h · 4h · 8h · 12h · 24h',
+    example: 'Block for 4, 8, 12, or 24 hours',
   },
   {
     icon: Ban,
@@ -32,7 +32,7 @@ const steps = [
     number: '04',
     title: 'Schedule Block Days',
     description:
-      'Pre-set no-trade days like expiry days or personal rules.',
+      'Pre-set with no-trade day, or don\'n feel like trading today beacuse it may be bad, lock your self out?',
     example: 'Every Thursday / Custom dates',
   },
 ]

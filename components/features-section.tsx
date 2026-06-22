@@ -14,13 +14,13 @@ const features = [
     icon: Clock,
     title: 'Timed Block',
     description:
-      'Choose your lockout duration — 2, 4, 8, 12, or 24 hours. No way to bypass it during the block.',
+      'Choose your lockout duration block for 4, 8, 12, 24 hours. No way to bypass it during the block.',
   },
   {
     icon: CalendarX,
     title: 'Block Specific Dates',
     description:
-      'Pre-set with no trade days, or don\'t feel like trading today because it may be a bad day, lock yourself out.',
+      'Pre-set with no trade days, or dont feel like trading today because it may be a bad day, lock yourself out.',
   },
   {
     icon: Bell,
