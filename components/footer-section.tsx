@@ -4,7 +4,7 @@ export function FooterSection() {
   return (
     <footer className="bg-card/50 border-t border-border/50 py-20 px-4">
       <div className="max-w-screen-xl mx-auto">
-        <div className="grid md:grid-cols-4 gap-12 mb-12">
+        {/* <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div>
             <h3 className="text-xl font-bold mb-4 text-accent">TradLMT</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
@@ -89,7 +89,7 @@ export function FooterSection() {
               </li>
             </ul>
           </div>
-        </div>
+        </div> */}
 
         <div className="border-t border-border/50 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
