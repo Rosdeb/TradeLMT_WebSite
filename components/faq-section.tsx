@@ -32,7 +32,7 @@ const faqs = [
   {
     question: 'Is TradeLMT free?',
     answer:
-      'Yes. Core features are free. Advanced features are in Pro plan.',
+      'No. Broker integration is not free. To connect with any broker, users need to subscribe to a paid plan or make the required payment.',
   },
 ]
 
