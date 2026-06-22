@@ -49,7 +49,7 @@ export default function TermsOfService() {
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">8. Contact</h2>
-            <p>For any questions about these terms, contact <a href="mailto:support@tradelmt.com" className="text-green-400">support@tradelmt.com</a>.</p>
+            <p>For any questions about these terms, contact : <a href="mailto:supportteam@tradelmt.com" className="text-green-400">supportteam@tradelmt.com</a>.</p>
           </section>
         </div>
       </div>

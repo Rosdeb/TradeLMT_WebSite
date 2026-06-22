@@ -34,7 +34,7 @@ export function HeroSection() {
         </p>
 
         <p className="text-base text-green-400/80 font-medium mb-10">
-          Block for 2 · 4 · 8 · 12 · 24 hours
+          Block for 4 · 8 · 12 · 24 Hours
         </p>
 
         <div className="flex flex-col sm:flex-row gap-5 justify-center mb-8">

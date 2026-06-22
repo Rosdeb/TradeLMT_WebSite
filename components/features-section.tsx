@@ -20,7 +20,7 @@ const features = [
     icon: CalendarX,
     title: 'Block Specific Dates',
     description:
-      'Schedule no-trade days in advance for discipline and risk control.',
+      'Pre-set with no trade days, or don\'t feel like trading today because it may be a bad day, lock yourself out.',
   },
   {
     icon: Bell,
@@ -34,6 +34,14 @@ const features = [
     description:
       'Auto-log every trade with timestamp and P&L to track discipline over time.',
   },
+
+  {
+    icon: BarChart2,
+    title: 'Self-Lock Feature',
+    description:
+      'Not every day is a good trading day. War in the world can affect the stock market.',
+  },
+
 ]
 
 export function FeaturesSection() {

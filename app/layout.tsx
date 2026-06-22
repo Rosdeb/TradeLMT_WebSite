@@ -14,8 +14,8 @@ export const metadata: Metadata = {
   description: 'Trade futures with confidence. No account minimums, just your trading skill. Connect to your favorite brokers and start trading with our award-winning platform.',
   generator: 'v0.app',
   icons: {
-    icon: '/tradelmt-logo.png',
-    apple: '/tradelmt-logo.png',
+    icon: '/tradelmt_logo.png',
+    apple: '/tradelmt_logo.png',
   },
 }
 

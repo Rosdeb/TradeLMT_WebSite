@@ -21,16 +21,16 @@ export function Header() {
       <div className="max-w-screen-xl mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-          <Image src="/tradelmt-logo.png" alt="TradeLMT" width={50} height={50} className="rounded-full" />
+          <Image src="/tradelmt_logo.png" alt="TradeLMT" width={100} height={65} className="rounded-full" />
 
-          <Image
+          {/* <Image
             src="/image_1.png"
             alt="TradeLMT"
             width={200}
             height={100}
             priority
             className="h-10 w-auto"
-          />
+          /> */}
         </a>
 
         {/* Nav */}
