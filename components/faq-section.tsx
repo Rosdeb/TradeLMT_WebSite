@@ -17,7 +17,7 @@ const faqs = [
   {
     question: 'Which brokers are supported?',
     answer:
-      'Zerodha, Angel One, Upstox, Fyers, Dhan, Groww, 5paisa, and ICICI Direct.',
+      'Binance, Tradovate, TastyTrade, Liquid/Quoine, IBKR, ThinkOrSwim / Schwab,',
   },
   {
     question: 'Can I block specific dates?',
