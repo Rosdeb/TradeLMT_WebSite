@@ -29,7 +29,7 @@ export default function PrivacyPolicy() {
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">4. Data Retention</h2>
-            <p>Your account data is retained for as long as your account is active. You may request deletion at any time by contacting us at <a href="mailto:supportteam@tradelmt.com" className="text-green-400">supportteam@tradelmt.com</a>.</p>
+            <p>Your account data is retained for as long as your account is active. You may request deletion at any time by contacting us at: <a href="mailto:supportteam@tradelmt.com" className="text-green-400">supportteam@tradelmt.com</a>.</p>
           </section>
 
           <section>
@@ -39,7 +39,7 @@ export default function PrivacyPolicy() {
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">6. Contact</h2>
-            <p>For any privacy-related questions, contact us at <a href="mailto:supportteam@tradelmt.com" className="text-green-400">supportteam@tradelmt.com</a>.</p>
+            <p>For any privacy-related questions, contact us at: <a href="mailto:supportteam@tradelmt.com" className="text-green-400">supportteam@tradelmt.com</a>.</p>
           </section>
         </div>
       </div>
