@@ -33,7 +33,7 @@ const steps = [
     title: 'Schedule Block Days',
     description:
       'Pre-set with no-trade day, or don\'n feel like trading today beacuse it may be bad, lock your self out?',
-    example: 'Every Thursday / Custom dates',
+    example: 'Every Thursday & Custom dates',
   },
 ]
 
