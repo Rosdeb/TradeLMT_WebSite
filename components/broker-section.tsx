@@ -5,7 +5,7 @@ import Image from 'next/image'
 const brokers = [
   {
     name: 'ThinkOrSwim / Schwab',
-    logo: 'https://play-lh.googleusercontent.com/GuDYnpP_SjyHhqSSh4pqtcCltMu-hHZdjnS1ZegBzp2EqCb9KMKFvbpn-K41CaSO9voFs1goDn10Zju4_IDgV9U',
+    logo: 'https://pbs.twimg.com/profile_images/1716438690942046208/jL07vmjF_400x400.jpg'
   },
   {
     name: 'Interactive Brokers (IBKR)',
@@ -16,12 +16,12 @@ const brokers = [
     logo: 'https://upload.wikimedia.org/wikipedia/commons/5/57/Binance_Logo.png',
   },
   {
-    name :"Tradovate",
-    logo:"https://play-lh.googleusercontent.com/JXKzB18F4sn2juqCJJTGZ-RrRxRe0iV-L3bUX8BmP5ZeDFUybMS5pvt35a7Fo0n_oeXD  "
-  },
-  {
    name : "TastyTrade",
    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJBnk-1o37EfPtKlkjO5P7y4rMUwUzdwssmw&s"
+  },
+  {
+   name : "Tradovate",
+   logo: "https://play-lh.googleusercontent.com/JXKzB18F4sn2juqCJJTGZ-RrRxRe0iV-L3bUX8BmP5ZeDFUybMS5pvt35a7Fo0n_oeXD"
   },
   {
     name :"Liquid/Quoine",

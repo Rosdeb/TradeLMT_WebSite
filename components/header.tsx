@@ -21,7 +21,7 @@ export function Header() {
       <div className="max-w-screen-xl mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-          <Image src="/Screenshot_2026-06-19_145555-removebg-preview.png" alt="TradeLMT" width={100} height={60} />
+          <Image src="/image_1.png" alt="TradeLMT" width={100} height={60} />
 
           {/* <Image
             src="/image_1.png"

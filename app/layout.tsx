@@ -10,12 +10,12 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
- title: 'TradeLMT - Prop Trading Platform',
+ title: 'TradeLMT',
   description: 'Trade futures with confidence. No account minimums, just your trading skill. Connect to your favorite brokers and start trading with our award-winning platform.',
   generator: 'v0.app',
   icons: {
-    icon: '/Screenshot_2026-06-19_145555-removebg-preview.png',
-    apple: '/Screenshot_2026-06-19_145555-removebg-preview.png',
+    icon: '/Group 8.png',
+    apple: '/Group 8.png',
   },
 }
 
